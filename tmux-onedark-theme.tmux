@@ -1,13 +1,12 @@
 #!/bin/bash
-onedark_black="#1E2127"           # Black
-onedark_blue="#61AFEF"            # Blue
-onedark_yellow="#D19A66"          # Yellow
-onedark_red="#E06C75"             # Red
-onedark_white="#ABB2BF"           # White
-onedark_green="#98C379"           # Green
-onedark_visual_grey="#3A3F4B"     # Adjusted to match the existing style
-onedark_comment_grey="#5C6370"    # Bright Black (Comment Grey)
-
+onedark_black="#15181B"         # Darker Black
+onedark_blue="#61AFEF"          # Bright Blue
+onedark_yellow="#D19A66"        # Bright Yellow
+onedark_red="#E06C75"           # Bright Red
+onedark_white="#FFFFFF"         # Bright White
+onedark_green="#98C379"         # Bright Green
+onedark_visual_grey="#3E4452"   # Retaining the existing visual grey
+onedark_comment_grey="#5C6370"  # Bright Black (for comments)
 
 get() {
    local option=$1
