@@ -35,7 +35,7 @@ setw() {
 set "status" "on"
 set "status-justify" "left"
 
-set "status-left-length" "100""#[fg=$onedark_black,bg=#{?session_prefix,$onedark_red,$onedark_green},bold] #S #{prefix_highlight}#[fg=#{?session_prefix,$onedark_red,$onedark_green},bg=$onedark_black,nobold,nounderscore,noitalics]"
+set "status-left-length" "100"
 set "status-right-length" "100"
 set "status-right-attr" "none"
 
@@ -81,8 +81,7 @@ time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%d/%m/%Y")
 
 set "status-right" "#[fg=$onedark_green,bg=$onedark_black]#[fg=$onedark_black,bg=$onedark_green] #{pane_current_path} #[fg=$onedark_yellow,bg=$onedark_green]#[fg=$onedark_black,bg=$onedark_yellow] ${time_format} #[fg=$onedark_red,bg=$onedark_yellow]#[fg=$onedark_black,bg=$onedark_red] ${date_format} "
-set "status-left" "#[fg=$onedark_black,bg=#{?client_prefix,$onedark_red,$onedark_green},bold] #{?#{length:#S} > 20, #{prefix_highlight}#{slice:#S:0:20}..., #S} #[fg=#{?client_prefix,$onedark_red,$onedark_green},bg=$onedark_black,nobold,nounderscore,noitalics]"
-
+set "status-left" "#[fg=$onedark_black,bg=#{?client_prefix,$onedark_red,$onedark_green},bold] #{?#{gt:#{len:#S},20},#{prefix_highlight}#{slice:#S:0:20}..., #S} #[fg=#{?client_prefix,$onedark_red,$onedark_green},bg=$onedark_black,nobold,nounderscore,noitalics]"
 
 
 set "window-status-format" "#[fg=$onedark_black,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_visual_grey] #I  #W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
