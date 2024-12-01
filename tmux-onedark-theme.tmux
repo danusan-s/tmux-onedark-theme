@@ -1,12 +1,12 @@
 #!/bin/bash
-onedark_black="#15181B"         # Darker Black
-onedark_blue="#61AFEF"          # Bright Blue
-onedark_yellow="#E5C07B"        # Bright Yellow
-onedark_red="#E06C75"           # Bright Red
-onedark_white="#ABB2BF"         # Bright White
-onedark_green="#98C379"         # Bright Green
-onedark_visual_grey="#3E4452"   # Retaining the existing visual grey
-onedark_comment_grey="#5C6370"  # Bright Black (for comments)
+onedark_black="#282c34"         # Darker Black (color0)
+onedark_blue="#61afef"          # Bright Blue (color4)
+onedark_yellow="#e5c07b"        # Bright Yellow (color3)
+onedark_red="#e06c75"           # Bright Red (color1)
+onedark_white="#979eab"         # Bright White (color7)
+onedark_green="#98c379"         # Bright Green (color2)
+onedark_visual_grey="#393e48"   # Retaining the existing visual grey (color8)
+onedark_comment_grey="#979eab"  # Bright grey (selection_foreground)
 
 get() {
    local option=$1
