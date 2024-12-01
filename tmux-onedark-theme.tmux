@@ -5,8 +5,7 @@ onedark_yellow="#e5c07b"        # Bright Yellow (color3)
 onedark_red="#e06c75"           # Bright Red (color1)
 onedark_white="#979eab"         # Bright White (color7)
 onedark_green="#98c379"         # Bright Green (color2)
-onedark_visual_grey="#393e48"   # Retaining the existing visual grey (color8)
-onedark_comment_grey="#979eab"  # Bright grey (selection_foreground)
+onedark_grey="#393e48"          # Retaining the existing visual grey (color8)
 
 get() {
    local option=$1
@@ -58,7 +57,7 @@ setw "window-status-activity-attr" "none"
 
 setw "window-status-separator" ""
 
-set "window-style" "fg=$onedark_comment_grey"
+set "window-style" "fg=$onedark_grey"
 set "window-active-style" "fg=$onedark_white"
 
 set "pane-border-fg" "$onedark_white"
@@ -80,5 +79,5 @@ set "@prefix_highlight_output_prefix" "  "
 set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #S #{prefix_highlight}#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 set "status-right" ""
 
-set "window-status-format" "#[fg=$onedark_black,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_visual_grey] #I  #W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
-set "window-status-current-format" "#[fg=$onedark_black,bg=$onedark_comment_grey,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_comment_grey,nobold] #I  #W #[fg=$onedark_comment_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
+set "window-status-format" "#[fg=$onedark_black,bg=$onedark_grey,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_grey] #I  #W #[fg=$onedark_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
+set "window-status-current-format" "#[fg=$onedark_black,bg=$onedark_grey,nobold,nounderscore,noitalics]#[fg=$onedark_red,bg=$onedark_grey,nobold] #I  #W #[fg=$onedark_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
