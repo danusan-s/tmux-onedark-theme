@@ -1,7 +1,7 @@
 #!/bin/bash
 onedark_black="#15181B"         # Darker Black
 onedark_blue="#61AFEF"          # Bright Blue
-onedark_yellow="#D19A66"        # Bright Yellow
+onedark_yellow="#E5C07B"        # Bright Yellow
 onedark_red="#E06C75"           # Bright Red
 onedark_white="#ABB2BF"         # Bright White
 onedark_green="#98C379"         # Bright Green
@@ -77,10 +77,7 @@ set "@prefix_highlight_bg" "$onedark_green"
 set "@prefix_highlight_copy_mode_attr" "fg=$onedark_black,bg=$onedark_green"
 set "@prefix_highlight_output_prefix" "  "
 
-time_format=$(get "@onedark_time_format" "%R")
-date_format=$(get "@onedark_date_format" "%d/%m/%Y")
-
-set "status-right" "#[fg=$onedark_green,bg=$onedark_black]#[fg=$onedark_black,bg=$onedark_green] #{pane_current_path} #[fg=$onedark_yellow,bg=$onedark_green]#[fg=$onedark_black,bg=$onedark_yellow] ${time_format} #[fg=$onedark_red,bg=$onedark_yellow]#[fg=$onedark_black,bg=$onedark_red] ${date_format} "
+set "status-right" "#[fg=$onedark_green,bg=$onedark_black]#[fg=$onedark_black,bg=$onedark_green] #{pane_current_path} "
 set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #S #{prefix_highlight}#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 
 set "window-status-format" "#[fg=$onedark_black,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_visual_grey] #I  #W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
